@@ -1,14 +1,14 @@
-ImagNet-Vid-Robust playground
+ImageNet-Vid-Robust playground
 =============================
 
-Read our paper [A systematic framework for natural perturbations from videos](https://modestyachts.github.io/natural-perturbations-website) for background information.
+See our paper [A systematic framework for natural perturbations from videos](https://modestyachts.github.io/natural-perturbations-website) for background information.
 
 Download the dataset (~1G) first:
 ```
 ./download_dataset.sh
 ```
 
-Compute Robust Accuracy + Visualize failure cases by scoring predictions (example predictions provided):
+Compute robust accuracy and visualize failure cases by scoring predictions. We provide example predictions from a ResNet-152 model fine-tuned on ImageNet-Vid in [`example_predictions/resnet152_finetune.json`](./example_predictions/resnet152_finetune.json).
 
 ```
 python score_predictions.py  example_predictions/resnet152_finetune.json
