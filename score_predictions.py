@@ -53,12 +53,13 @@ def main():
     img_folder = pathlib.Path(f"{model_name}_predictions/")
     img_folder.mkdir(exist_ok=True)
     for anchor, pmk in wrong_map.items():
+        anchor_path = pathlib.Path(anchor)
+        vid_name = str(anchor_path.parent.name)
         cls_name0 = cls_idx[str(np.argmax(preds[anchor]))][1]
-        copy_path0 = img_folder / pathlib.Path(anchor.strip(".JPEG") + f"_pred_{cls_name0}.jpeg").name
-
+        copy_path0 = img_folder / pathlib.Path(vid_name + f"_pred_{cls_name0}.jpeg")
         copyfile(str(dataset_path / anchor), copy_path0)
         cls_name1 = cls_idx[str(np.argmax(preds[pmk]))][1]
-        copy_path1 = img_folder / pathlib.Path(anchor.strip(".JPEG") + f"_pred_{cls_name1}.jpeg").name
+        copy_path1 = img_folder / pathlib.Path(vid_name + f"_pred_{cls_name1}.jpeg")
         copyfile(str(dataset_path / pmk), copy_path1)
 
 
