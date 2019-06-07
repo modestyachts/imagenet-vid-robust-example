@@ -19,5 +19,5 @@ Failure examples stored in local directory:
 ls resnet152_finetune_predictions/
 ```
 
-
+The generated folder contains both the benign (anchor) frames and the nearby misclassified frames:
 
