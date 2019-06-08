@@ -1,7 +1,7 @@
 ImageNet-Vid-Robust playground
 =============================
 
-See our paper [A systematic framework for natural perturbations from videos](https://modestyachts.github.io/natural-perturbations-website) for background information.
+Please see our paper [A systematic framework for natural perturbations from videos](https://modestyachts.github.io/natural-perturbations-website) for background information.
 
 Download the dataset (~1G) first:
 ```
