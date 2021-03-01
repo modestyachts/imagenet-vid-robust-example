@@ -1,3 +1,3 @@
 #!/bin/bash
-wget https://robustvideo.s3-us-west-2.amazonaws.com/imagenet-vid-robust.tar.gz
-tar -xf imagenet-vid-robust.tar.gz
+wget https://do-imagenet-classifiers-generalize-across-time.s3-us-west-2.amazonaws.com/imagenet_vid_ytbb_robust.tar.gz
+tar -xf imagenet_vid_ytbb_robust.tar.gz
